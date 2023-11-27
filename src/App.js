@@ -23,7 +23,7 @@ const App = () => {
   
   const handleSubmit = async (e)=>{
     e.preventDefault()
-    const data = await  axios.post('http://localhost:5000/create',formData)
+    const data = await  axios.post('https://survey-form-backend.vercel.app/create',formData)
     console.log(data)
     if(data.data.success){
       alert("data Save successfully")}
@@ -41,13 +41,13 @@ const App = () => {
   const [dataList,setDataList]= useState([])
 
    
-    axios.get('http://localhost:5000/read')
+    axios.get('https://survey-form-backend.vercel.app/read')
           .then(response => setDataList(response.data))
           .catch(error => console.error('Error fetching surveys:', error));
   
       
   useEffect(() => {
-    axios.get('http://localhost:5000/read')
+    axios.get('https://survey-form-backend.vercel.app/read')
           .then(response => setDataList(response.data))
           .catch(error => console.error('Error fetching surveys:', error));
         },[]);
