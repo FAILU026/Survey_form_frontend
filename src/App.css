@@ -43,7 +43,7 @@ body{
   border-radius: 0.5rem;
   border: none;
   color: white;
-  margin-right: 40px;
+  
  
 }
 .home-container{
@@ -128,13 +128,16 @@ body{
 
 .table-container{
   margin-top: 50px;
+   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .table-container table thead tr{
   background-color: rgb(225, 211, 197);
 }
 .table-container table thead tr th,
 .table-container table tbody tr td{
-  min-width: 240px;
+  
   padding: 7px;
   margin: auto 50px;
   text-align: center;
@@ -164,9 +167,23 @@ body{
   margin-top: 4rem;
   font-size: 2rem;
 }
+  .btn-f,
+.btn-d{
+  
+  font-size: 16px;
+  cursor: pointer;
+     
+  background: linear-gradient(104.58deg, #FDBD4F 11.08%, #FD5032 93.55%);
+  padding: 0.6rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  
+ 
+}
 }
 
-@media screen and (max-width:550px){
+@media screen and (max-width:480px){
   .nav_container{
       margin: 5px;
      padding: auto 1rem;
@@ -186,11 +203,11 @@ body{
   cursor: pointer;
      
   background: linear-gradient(104.58deg, #FDBD4F 11.08%, #FD5032 93.55%);
-  padding: 0.4rem 1.4rem;
+  padding: 0.4rem 1.8rem;
   border-radius: 0.5rem;
   border: none;
   color: white;
-  margin-right: 20px;
+ 
  
 }
 }
